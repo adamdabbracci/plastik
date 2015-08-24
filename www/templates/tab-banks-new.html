@@ -1,0 +1,27 @@
+<ion-view view-title="New Bank">
+  <ion-content>
+  	<label class="item item-input">
+	    <span class="input-label">Account Name</span>
+	    <input type="text" ng-model="newaccount.name">
+	</label>
+
+
+	<label class="item item-input item-select">
+	    <div class="input-label">
+	      Account Type
+	    </div>
+	    <select ng-model="newaccount.type">
+	    	<option value="debit">Debit Card</option>
+	    	<option value="credit">Credit Card</option>
+	    	<option value="checking">Checking</option>
+	    </select>
+	</label>	
+
+	<button class="button button-stable button-block" ng-click="signIntoBank()">
+	  Sign In To Bank
+	</button>
+
+	 <b>{{devmessage}}</b>
+  </ion-content>
+
+</ion-view>

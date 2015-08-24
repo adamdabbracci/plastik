@@ -1,0 +1,40 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+
+    	  <div class="card" ng-show="errorMessage !== undefined && errorMessage !== ''">
+			  <div class="item item-text-wrap">
+			    {{errorMessage}}
+			  </div>
+			</div>
+
+		  
+		  <div class="list list-inset">
+			  <label class="item item-input">
+		    <input type="email" placeholder="Email Address" value="adamdabbracci@gmail.com" ng-model="account.email">
+		  </label>
+		  <label class="item item-input">
+		    <input type="password" placeholder="Password" value="testpass"  ng-model="account.password">
+		  </label>
+
+		  <button class="button button-positive button-block button-full" ng-click="login()">
+		   Login
+		  </button>
+		  <button class="button button-positive button-block button-full" ng-click="signup()">
+		   Sign Up
+		  </button>
+
+
+		  
+		  </div>
+
+
+
+		  
+
+    </ion-list>
+    
+	 <b>{{devmessage}}</b>
+  </ion-content>
+
+</ion-view>
